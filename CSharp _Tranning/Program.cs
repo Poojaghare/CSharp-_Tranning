@@ -24,6 +24,17 @@ namespace CSharp__Tranning
 
             Department1 dept1 = new Department1(2, "HR", "Mumbai");
             Console.WriteLine(dept1.Getdata());
+
+
+
+            // create object student
+
+            Student stud = new Student();  // Default Constrctor
+
+            Console.WriteLine(stud.Getdata());
+
+            Student stud1 = new Student(101, "Siya", "HR", "pune");  // Paramatric constrctor
+            Console.WriteLine(stud1.Getdata());
             
             
         }
