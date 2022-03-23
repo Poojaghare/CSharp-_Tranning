@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSharp__Tranning
 {
-    internal class Program
+    internal class Class1
     {
-        static void Main(string[] args)
 
+
+        public void test()
         {
-            Class1 c = new Class1();
-            c.test();
+            Console.WriteLine("Welcome");
         }
     }
 }
