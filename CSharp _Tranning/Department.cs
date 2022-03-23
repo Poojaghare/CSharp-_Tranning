@@ -26,7 +26,7 @@ namespace CSharp__Tranning
             }
             public string Getdata()
             {
-                return "Dept id" + id + "Dept name" + name + "dept Location" + location;
+                return "Dept id " + id + "Dept name " + name + " dept Location " + location;
             }
 
 

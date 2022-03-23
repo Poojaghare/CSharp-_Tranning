@@ -8,13 +8,22 @@ namespace CSharp__Tranning
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)  // entry point of program
 
         {
+            // create object of department class
             Department dept = new Department();
             dept.AssignData();
             string str = dept.Getdata();
             Console.WriteLine(str);
+
+
+
+
+            //create object of department1 class
+
+            Department1 dept1 = new Department1(2, "HR", "Mumbai");
+            Console.WriteLine(dept1.Getdata());
             
             
         }
