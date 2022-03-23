@@ -11,8 +11,12 @@ namespace CSharp__Tranning
         static void Main(string[] args)
 
         {
-            Class1 c = new Class1();
-            c.test();
+            Department dept = new Department();
+            dept.AssignData();
+            string str = dept.Getdata();
+            Console.WriteLine(str);
+            
+            
         }
     }
 }
