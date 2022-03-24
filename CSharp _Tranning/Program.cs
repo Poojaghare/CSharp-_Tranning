@@ -36,6 +36,28 @@ namespace CSharp__Tranning
             Student stud1 = new Student(101, "Siya", "HR", "pune");  // Paramatric constrctor
             Console.WriteLine(stud1.Getdata());
             
+
+
+            // create object Employee
+             
+            Employee emp = new Employee( 100, "Riyansh", 25000);
+            Console.WriteLine(emp);
+
+
+            // create object CalculateEmpSalary
+
+
+
+            CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
+            salary.CalculateSalary();
+            Console.WriteLine(salary);
+
+            
+
+            
+            
+            
+
             
         }
     }
