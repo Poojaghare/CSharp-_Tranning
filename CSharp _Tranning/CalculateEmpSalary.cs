@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace CSharp__Tranning
 {
-    internal class CalculateEmpSalary
+    public class CalculateEmpSalary
     {
-        private int emp1Id;
-        private string emp1name;
-        private double basicsalary , hra, da,pf , grosssalary;
+        protected int emp1Id;
+        protected string emp1name;
+        protected double basicsalary , hra, da,pf , grosssalary;
 
         public CalculateEmpSalary(int emp1Id, string emp1name, double basicsalary )
         {
@@ -22,7 +22,7 @@ namespace CSharp__Tranning
             this.basicsalary = basicsalary;
         }
           
-          public void CalculateSalary()
+          public virtual void CalculateSalary()
         {
             hra = basicsalary * 0.40;
             da = basicsalary * 0.20;
@@ -32,7 +32,7 @@ namespace CSharp__Tranning
 
         public override string ToString()
         {
-            return "Emp Id " + emp1Id + "emp name " + emp1name + " Gross " + "salary " + grosssalary;
+            return "Emp Id " + emp1Id + "emp name " + emp1name + " Grosssalary " + grosssalary;
         }
     }
 }

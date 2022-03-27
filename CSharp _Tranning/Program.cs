@@ -11,12 +11,7 @@ namespace CSharp__Tranning
         static void Main(string[] args)  // entry point of program
 
         {
-            // create object of department class
-            Department dept = new Department();
-            dept.AssignData();
-            string str = dept.Getdata();
-            Console.WriteLine(str);
-
+            
 
 
 
@@ -51,6 +46,17 @@ namespace CSharp__Tranning
             CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
             salary.CalculateSalary();
             Console.WriteLine(salary);
+
+
+            //create object salesManager 
+
+            SalesManager salesM = new SalesManager(); 
+            salesM.CalculateSalary();
+            Console.WriteLine(salesM);
+
+            SalesManager salesM2 = new SalesManager(10 , "Pooja" , 34000,1000,2000);
+            salesM2.CalculateSalary();
+            Console.WriteLine(salesM2);
 
             
 
