@@ -44,17 +44,34 @@ namespace CSharp__Tranning
             //Console.WriteLine(salary);//
 
 
-            //create object salesManager 
+            //create object calculations
 
-            //SalesManager salesM = new SalesManager(); 
-            //salesM.CalculateSalary();
-            //Console.WriteLine(salesM);
+            Calculations cal = new Calculations();
+            cal.addition(20, 30);
+            Console.WriteLine(cal);
 
-            //SalesManager salesM2 = new SalesManager(10 , "Pooja" , 34000,1000,2000);
-            //salesM2.CalculateSalary();
-            //Console.WriteLine(salesM2);
+            Calculations cal2 = new Calculations();
+
+            cal2.addition2(20, 30 , 40);
+            Console.WriteLine(cal2);
+
+            Calculations cal3 = new Calculations();
+            cal3.addition3(20, 30.00);
+            Console.WriteLine(cal3 );
 
 
+            //Create object Product
+
+            Product p = new Product(100, "ABC", 6000f);
+            p.Prod_Bill();
+            Console.WriteLine(p);
+
+            Product p2 = new Product(101,"XYZ",4000f);
+            p2.Prod_Bill();
+            Console.WriteLine(p2);
+
+
+             
 
             
              
