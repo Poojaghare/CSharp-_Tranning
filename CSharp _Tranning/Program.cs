@@ -17,46 +17,47 @@ namespace CSharp__Tranning
 
             //create object of department1 class
 
-            Department1 dept1 = new Department1(2, "HR", "Mumbai");
-            Console.WriteLine(dept1.Getdata());
+           // Department1 dept1 = new Department1(2, "HR", "Mumbai");
+           // Console.WriteLine(dept1.Getdata());
 
 
 
             // create object student
 
-            Student stud = new Student();  // Default Constrctor
+            //Student stu = new Student();
 
-            Console.WriteLine(stud.Getdata());
-
-            Student stud1 = new Student(101, "Siya", "HR", "pune");  // Paramatric constrctor
-            Console.WriteLine(stud1.Getdata());
             
 
 
             // create object Employee
              
-            Employee emp = new Employee( 100, "Riyansh", 25000);
-            Console.WriteLine(emp);
+            //Employee emp = new Employee( 100, "Riyansh", 25000);
+            //Console.WriteLine(emp); 
 
 
             // create object CalculateEmpSalary
 
 
 
-            CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
-            salary.CalculateSalary();
-            Console.WriteLine(salary);
+           // CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
+            //salary.CalculateSalary();
+            //Console.WriteLine(salary);//
 
 
             //create object salesManager 
 
-            SalesManager salesM = new SalesManager(); 
-            salesM.CalculateSalary();
-            Console.WriteLine(salesM);
+            //SalesManager salesM = new SalesManager(); 
+            //salesM.CalculateSalary();
+            //Console.WriteLine(salesM);
 
-            SalesManager salesM2 = new SalesManager(10 , "Pooja" , 34000,1000,2000);
-            salesM2.CalculateSalary();
-            Console.WriteLine(salesM2);
+            //SalesManager salesM2 = new SalesManager(10 , "Pooja" , 34000,1000,2000);
+            //salesM2.CalculateSalary();
+            //Console.WriteLine(salesM2);
+
+
+
+            
+             
 
             
 

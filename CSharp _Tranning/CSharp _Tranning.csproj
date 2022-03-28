@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSharp__Tranning.ArrayEx</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,6 +51,8 @@
     <Compile Include="Department.cs" />
     <Compile Include="Department1.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="FoodList_mainPro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalesManager.cs" />
