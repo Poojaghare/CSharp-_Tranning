@@ -49,6 +49,7 @@
     <Compile Include="ArrayEx.cs" />
     <Compile Include="CalculateEmpSalary.cs" />
     <Compile Include="Calculations.cs" />
+    <Compile Include="Calcutation1.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Department1.cs" />
     <Compile Include="Employee.cs" />

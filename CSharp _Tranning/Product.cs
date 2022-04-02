@@ -11,6 +11,7 @@ namespace CSharp__Tranning
         int prod_code;
         string prod_name;
         float prod_price;
+         
 
         public Product(int prod_code, string prod_name, float prod_price)
         {
@@ -24,11 +25,10 @@ namespace CSharp__Tranning
         {
             if (prod_price > 5000)
                 prod_price *= 0.90f;
-        }
-
-        public override string ToString()
+            }
+            public override string ToString()
         {
-            return "Product code: " + prod_code + "product name: " + prod_name + "Product price: " + prod_price ;
+            return "Product code: " + prod_code + "product name: " + prod_name + "Product price: " + prod_price ; 
         }
 
     }

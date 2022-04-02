@@ -11,14 +11,14 @@ namespace CSharp__Tranning
         static void Main(string[] args)  // entry point of program
 
         {
-            
+
 
 
 
             //create object of department1 class
 
-           // Department1 dept1 = new Department1(2, "HR", "Mumbai");
-           // Console.WriteLine(dept1.Getdata());
+            // Department1 dept1 = new Department1(2, "HR", "Mumbai");
+            // Console.WriteLine(dept1.Getdata());
 
 
 
@@ -26,11 +26,11 @@ namespace CSharp__Tranning
 
             //Student stu = new Student();
 
-            
+
 
 
             // create object Employee
-             
+
             //Employee emp = new Employee( 100, "Riyansh", 25000);
             //Console.WriteLine(emp); 
 
@@ -39,7 +39,7 @@ namespace CSharp__Tranning
 
 
 
-           // CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
+            // CalculateEmpSalary salary = new CalculateEmpSalary(111, "Avni", 3000);
             //salary.CalculateSalary();
             //Console.WriteLine(salary);//
 
@@ -52,12 +52,12 @@ namespace CSharp__Tranning
 
             Calculations cal2 = new Calculations();
 
-            cal2.addition2(20, 30 , 40);
+            cal2.addition2(20, 30, 40);
             Console.WriteLine(cal2);
 
             Calculations cal3 = new Calculations();
             cal3.addition3(20, 30.00);
-            Console.WriteLine(cal3 );
+            Console.WriteLine(cal3);
 
 
             //Create object Product
@@ -66,15 +66,32 @@ namespace CSharp__Tranning
             p.Prod_Bill();
             Console.WriteLine(p);
 
-            Product p2 = new Product(101,"XYZ",4000f);
+            Product p2 = new Product(101, "XYZ", 4000f);
             p2.Prod_Bill();
             Console.WriteLine(p2);
 
 
-             
+            // create object delegate
 
-            
-             
+           Calcutation1 c = new Calcutation1();
+            MyDelegate mydel = new MyDelegate(c.Addition);
+
+            // added method reference
+
+            mydel += new MyDelegate(c.Subtract);
+            mydel += new MyDelegate(c.multiply);
+
+            // remove method ref from invocation list
+
+            mydel -= new MyDelegate(c.Subtract);
+
+            Delegate[]list = mydel.GetInvocationList();
+            foreach (Delegate item in list) 
+            {
+                Console.WriteLine(item.Method);
+                Console.WriteLine(item.DynamicInvoke(30,12));
+            }
+
 
             
 
