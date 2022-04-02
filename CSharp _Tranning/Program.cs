@@ -92,6 +92,12 @@ namespace CSharp__Tranning
                 Console.WriteLine(item.DynamicInvoke(30,12));
             }
 
+            //  create object shape 
+
+            Circle circle = new Circle(4);
+            circle.calcutaleArea();
+            Console.WriteLine(circle);
+
 
             
 
