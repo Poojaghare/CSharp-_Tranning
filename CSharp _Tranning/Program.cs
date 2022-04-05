@@ -98,7 +98,11 @@ namespace CSharp__Tranning
             circle.calcutaleArea();
             Console.WriteLine(circle);
 
+            //   create object Rectangle
 
+            AbstractRec abc = new AbstractRec(20, 21);
+            abc.CalculateArea1();
+            Console.WriteLine(abc);
             
 
             
