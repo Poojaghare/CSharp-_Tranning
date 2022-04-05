@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgeException.cs" />
     <Compile Include="ArrayEx.cs" />
     <Compile Include="CalculateEmpSalary.cs" />
     <Compile Include="Calculations.cs" />
@@ -57,7 +58,9 @@
     <Compile Include="Employee.cs" />
     <Compile Include="Food.cs" />
     <Compile Include="FoodList_mainPro.cs" />
+    <Compile Include="Icustomer.cs" />
     <Compile Include="Iprintable.cs" />
+    <Compile Include="NameException.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
